@@ -485,3 +485,4 @@ $RECYCLE.BIN/
 # Vim temporary swap files
 *.swp
 Backend/MoneyManager.API/ConnectionString.json
+Backend/MoneyManager.API/appsettings.json
