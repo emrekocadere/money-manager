@@ -1,3 +1,0 @@
-{
-  "ConnectionString":"Server=localhost,1433;Database=MoneyManager;User Id=admin;Password=admin123;TrustServerCertificate=True;"
-}
