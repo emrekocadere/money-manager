@@ -11,9 +11,13 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Configuration.AddJsonFile("ConnectionString.json");
-var connectionString=builder.Configuration["ConnectionString"];
+
+//builder.Configuration.AddJsonFile("ConnectionString.json");
+
+var connectionString=builder.Configuration.GetConnectionString("ConnectionString");
+
 builder.Services.AddDbContext<MoneyManagerDbContext>(Options=>Options.UseSqlServer(connectionString));
+
 builder.Services.AddIdentity<User,Role>().AddEntityFrameworkStores<MoneyManagerDbContext>();
 
 var app = builder.Build();
