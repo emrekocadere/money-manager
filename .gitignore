@@ -103,6 +103,8 @@ StyleCopReport.xml
 *.pidb
 *.svclog
 *.scc
+appsettings.json
+
 
 # Chutzpah Test files
 _Chutzpah*
@@ -482,3 +484,4 @@ $RECYCLE.BIN/
 
 # Vim temporary swap files
 *.swp
+Backend/MoneyManager.API/ConnectionString.json
